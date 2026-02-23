@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="sv">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Berghems Mekaniska AB | CNC-svarvning &amp; Svetsning</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Montserrat:wght@700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-sans antialiased">
+    <nav
+        class="sticky top-0 z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <img alt="Berghems Mekaniska AB Logo" class="h-14 w-auto dark:brightness-0 dark:invert"
+                        src="Bilder/logo_berghems.png" />
+                </div>
+                <div class="hidden md:flex space-x-10 items-center">
+                    <a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors font-semibold text-sm tracking-wide uppercase"
+                        href="#om-oss">Om oss</a>
+                    <a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors font-semibold text-sm tracking-wide uppercase"
+                        href="#tjanster">Tjänster</a>
+                    <a class="text-slate-700 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors font-semibold text-sm tracking-wide uppercase"
+                        href="#maskinpark">Maskinpark</a>
+                    <a class="bg-primary text-white px-6 py-2.5 rounded-sm hover:bg-blue-800 transition-all font-bold text-xs uppercase tracking-widest shadow-lg shadow-blue-900/20"
+                        href="#kontakt">Offertförfrågan</a>
+                    <button id="theme-toggle"
+                        class="flex items-center p-2 text-slate-500 hover:text-primary dark:text-slate-400">
+                        <span class="material-symbols-outlined">dark_mode</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header class="relative bg-slate-50 dark:bg-slate-900 overflow-hidden">
+        <div class="absolute inset-0 industrial-pattern opacity-50"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-24 lg:py-32">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="max-w-2xl">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <span class="h-px w-8 bg-primary"></span>
+                        <span class="text-primary font-bold text-sm uppercase tracking-[0.2em]">Sedan 1970-talet</span>
+                    </div>
+                    <h1
+                        class="text-5xl lg:text-7xl font-display font-extrabold text-slate-900 dark:text-white leading-[1.1] mb-8">
+                        Välkommen till <br />
+                        <span class="text-gradient">Berghems Mekaniska</span>
+                    </h1>
+                    <p class="text-xl text-slate-600 dark:text-slate-400 mb-10 leading-relaxed max-w-xl">
+                        Vi är en pålitlig samarbetspartner inom verkstads- och industribranschen, hela vägen från
+                        idéutveckling till färdig produkt. Med över 50 år i branschen har vi lång erfarenhet inom det
+                        traditionella hantverket och levererar alltid hög kvalitet.
+                    </p>
+                    <div class="flex flex-wrap gap-5">
+                        <a class="inline-flex items-center justify-center px-10 py-5 bg-primary text-white font-bold uppercase tracking-widest text-xs hover:bg-blue-800 transition-all shadow-xl shadow-blue-900/30"
+                            href="#tjanster">
+                            Våra tjänster
+                        </a>
+                        <a class="inline-flex items-center justify-center px-10 py-5 border-2 border-slate-900 dark:border-white text-slate-900 dark:text-white font-bold uppercase tracking-widest text-xs hover:bg-slate-900 hover:text-white dark:hover:bg-white dark:hover:text-slate-900 transition-all"
+                            href="#om-oss">
+                            Läs mer om oss
+                        </a>
+                    </div>
+                </div>
+                <div class="relative hidden lg:block">
+                    <div
+                        class="relative z-10 rounded-sm overflow-hidden shadow-2xl border-8 border-white dark:border-slate-800">
+                        <img alt="Welding Process" class="w-full h-auto"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1JnNhBoCk05Kpa_RbDnpOuMCFPyF9EIrplih0P5jpApIgLxg5Pz7UKRyOty5uSF1AResq7QOkWaQGtrR4H5qzEnaHs5H76s6Qq2SbYNGmM4A7FcSOd90dJtpdBdlrf7u2JdqjzWEvPIXhTw1LVJLSk_hZ_r3mI0-FP1HqOzY5rACiLWRJciXuf9IWoGa2o863WHCF-BuBPay2SwbLmb0OfCzrZm7ufjLBBhl9uNP5y7riFQ-XLj0OtvhE_Bq8E04sxbDv6CwIAMc" />
+                        <div class="absolute bottom-0 left-0 right-0 bg-slate-900/80 backdrop-blur-sm p-6">
+                            <p class="text-white text-sm font-medium italic">"Med över 50 år i branschen har vi lång
+                                erfarenhet av traditionellt hantverk."</p>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-full h-full bg-primary/10 -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="py-24 bg-white dark:bg-slate-950" id="om-oss">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="md:col-span-1 border-l-4 border-primary pl-8 py-4">
+                    <h2 class="text-4xl font-display font-black text-slate-900 dark:text-white mb-4">50+ ÅR</h2>
+                    <p class="text-slate-500 uppercase tracking-widest font-bold text-sm">Av industriell expertis</p>
+                </div>
+                <div class="md:col-span-2 flex flex-col justify-center">
+                    <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Berghems Mekaniska AB kombinerar avancerad produktionsteknik med traditionell
+                        hantverksskicklighet. Vår tillverkning omfattar både prototyptagning och serieproduktion med
+                        fokus på precision och snabba ledtider.
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-20">
+                <div class="p-8 bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-4">history</span>
+                    <h4 class="font-bold mb-2">Etablerat 1970-tal</h4>
+                    <p class="text-sm text-slate-500">En stabil grund byggd på generationer av kunskap inom mekanik.</p>
+                </div>
+                <div class="p-8 bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-4">verified</span>
+                    <h4 class="font-bold mb-2">Kvalitetsfokus</h4>
+                    <p class="text-sm text-slate-500">Noggranna kontroller i varje steg för att möta högsta
+                        industristandard.</p>
+                </div>
+                <div class="p-8 bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-4">groups</span>
+                    <h4 class="font-bold mb-2">Partner</h4>
+                    <p class="text-sm text-slate-500">Vi ser oss som en förlängning av din egen produktion.</p>
+                </div>
+                <div class="p-8 bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800">
+                    <span class="material-symbols-outlined text-primary text-4xl mb-4">location_on</span>
+                    <h4 class="font-bold mb-2">Lokalt i Skene</h4>
+                    <p class="text-sm text-slate-500">Stolta över att leverera svensk industriell kvalitet från
+                        Sjuhärad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-slate-50 dark:bg-slate-900 border-y border-slate-200 dark:border-slate-800" id="tjanster">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-3xl md:text-5xl font-display font-bold mb-6">Våra Tjänster</h2>
+                <div class="h-1.5 w-24 bg-primary mx-auto mb-8"></div>
+                <p class="max-w-2xl mx-auto text-slate-600 dark:text-slate-400 text-lg italic">
+                    Vi kombinerar avancerad produktionsteknik med traditionell hantverksskicklighet.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div
+                    class="group bg-white dark:bg-slate-800 rounded-sm overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-2xl transition-all">
+                    <div class="relative h-64 overflow-hidden">
+                        <img alt="CNC Lathe"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTqfhrfbXkObre5Lc2OLzaR7LJw7MV93jEkXsHZKHS0f17xsuG4jK4PoQEwFpaI0tuq5LmJN5bfiv07NL4oRdpwtVJncbxdkMgLqyTRk-63fK5KdnPCZkqLF_lUVyMZQ8uOQ3UP51uCtMLBHrk5y2v_xGNtYjRccixjrv1yX4PfrAvUh3yw7i8xO3ZI4nbw8Nxz3bG3hnPdrSsJO5n9uXJR4a50-hyifYu4cDOHteotwc0zihjsJ5MhFPRToGrVw_CWX0_6Mehp8U" />
+                        <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+                    </div>
+                    <div class="p-10">
+                        <h3 class="text-2xl font-bold mb-4 flex items-center">
+                            <span class="material-symbols-outlined mr-3 text-primary">settings_input_component</span>
+                            CNC-svarvning
+                        </h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                            Vi är specialiserade på avancerad CNC-svarvning i de flesta material, från rostfritt stål
+                            och aluminium till speciallegeringar. Vi hanterar allt från enkla bultar till komplexa
+                            precisionsdelar.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <span
+                                    class="material-symbols-outlined text-primary mr-3 mt-0.5 text-lg">check_circle</span>
+                                <span class="text-sm font-semibold">Toleranser upp till ±0.01mm</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span
+                                    class="material-symbols-outlined text-primary mr-3 mt-0.5 text-lg">check_circle</span>
+                                <span class="text-sm font-semibold">Stångmatning för effektiv serieproduktion</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span
+                                    class="material-symbols-outlined text-primary mr-3 mt-0.5 text-lg">check_circle</span>
+                                <span class="text-sm font-semibold">Prototyptillverkning i korta serier</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="group bg-white dark:bg-slate-800 rounded-sm overflow-hidden border border-slate-200 dark:border-slate-700 hover:shadow-2xl transition-all">
+                    <div class="relative h-64 overflow-hidden">
+                        <img alt="Welding"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1JnNhBoCk05Kpa_RbDnpOuMCFPyF9EIrplih0P5jpApIgLxg5Pz7UKRyOty5uSF1AResq7QOkWaQGtrR4H5qzEnaHs5H76s6Qq2SbYNGmM4A7FcSOd90dJtpdBdlrf7u2JdqjzWEvPIXhTw1LVJLSk_hZ_r3mI0-FP1HqOzY5rACiLWRJciXuf9IWoGa2o863WHCF-BuBPay2SwbLmb0OfCzrZm7ufjLBBhl9uNP5y7riFQ-XLj0OtvhE_Bq8E04sxbDv6CwIAMc" />
+                        <div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors"></div>
+                    </div>
+                    <div class="p-10">
+                        <h3 class="text-2xl font-bold mb-4 flex items-center">
+                            <span class="material-symbols-outlined mr-3 text-primary">precision_manufacturing</span>
+                            Svetsning &amp; Montage
+                        </h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                            Våra licensierade svetsare utför MIG/MAG och TIG-svetsning med högsta kvalitet. Vi erbjuder
+                            även färdigt montage av komponenter direkt till er produktionslina.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <span
+                                    class="material-symbols-outlined text-primary mr-3 mt-0.5 text-lg">check_circle</span>
+                                <span class="text-sm font-semibold">Licensierad personal (ISO 9606-1)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span
+                                    class="material-symbols-outlined text-primary mr-3 mt-0.5 text-lg">check_circle</span>
+                                <span class="text-sm font-semibold">Robotiserad svetsning för stora volymer</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span
+                                    class="material-symbols-outlined text-primary mr-3 mt-0.5 text-lg">check_circle</span>
+                                <span class="text-sm font-semibold">Kompletta systemmontage</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-white dark:bg-slate-950" id="maskinpark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-baseline mb-16 gap-8">
+                <div>
+                    <h2 class="text-3xl font-display font-bold mb-4">Modern Maskinpark</h2>
+                    <p class="text-slate-500 max-w-xl">En modern maskinpark är nyckeln till vår konkurrenskraft. Vi
+                        investerar kontinuerligt i den senaste tekniken för att säkerställa högsta precision.</p>
+                </div>
+                <div class="flex items-center space-x-8">
+                    <div class="text-center">
+                        <p class="text-4xl font-black text-primary">15+</p>
+                        <p class="text-[10px] uppercase tracking-widest font-bold text-slate-400">Maskinenheter</p>
+                    </div>
+                    <div class="h-10 w-px bg-slate-200 dark:bg-slate-800"></div>
+                    <div class="text-center">
+                        <p class="text-4xl font-black text-primary">24/7</p>
+                        <p class="text-[10px] uppercase tracking-widest font-bold text-slate-400">Tillgänglighet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="overflow-hidden border border-slate-200 dark:border-slate-800 rounded-sm">
+                <table class="w-full text-left border-collapse bg-white dark:bg-slate-900">
+                    <thead class="bg-slate-50 dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700">
+                        <tr class="text-slate-600 dark:text-slate-300 uppercase text-[11px] font-bold tracking-widest">
+                            <th class="px-8 py-5">Maskintyp</th>
+                            <th class="px-8 py-5">Modell</th>
+                            <th class="px-8 py-5">Kapacitet</th>
+                            <th class="px-8 py-5 hidden md:table-cell">Beskrivning</th>
+                            <th class="px-8 py-5 text-right">Antal</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+                        <tr class="hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                            <td class="px-8 py-6 font-bold text-slate-900 dark:text-white">Längdsvarv</td>
+                            <td class="px-8 py-6 text-sm">Citizen L20-VIII</td>
+                            <td class="px-8 py-6 text-sm text-primary font-medium">Ø20 mm</td>
+                            <td class="px-8 py-6 text-xs text-slate-500 hidden md:table-cell">7 axlar, drivna verktyg,
+                                stångmagasin</td>
+                            <td class="px-8 py-6 text-right font-bold text-slate-900 dark:text-white">4</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                            <td class="px-8 py-6 font-bold text-slate-900 dark:text-white">Fleropsvarv</td>
+                            <td class="px-8 py-6 text-sm">Mori Seiki NLX 2500</td>
+                            <td class="px-8 py-6 text-sm text-primary font-medium">Ø350 x 700 mm</td>
+                            <td class="px-8 py-6 text-xs text-slate-500 hidden md:table-cell">Y-axel, Sub-spindel,
+                                robotladdad</td>
+                            <td class="px-8 py-6 text-right font-bold text-slate-900 dark:text-white">2</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                            <td class="px-8 py-6 font-bold text-slate-900 dark:text-white">CNC-fräs</td>
+                            <td class="px-8 py-6 text-sm">Mazak VCN-530C</td>
+                            <td class="px-8 py-6 text-sm text-primary font-medium">1050 x 530 mm</td>
+                            <td class="px-8 py-6 text-xs text-slate-500 hidden md:table-cell">18.000 rpm, 4-axel,
+                                högtryckskylning</td>
+                            <td class="px-8 py-6 text-right font-bold text-slate-900 dark:text-white">3</td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                            <td class="px-8 py-6 font-bold text-slate-900 dark:text-white">Svetsrobot</td>
+                            <td class="px-8 py-6 text-sm">ABB IRB 2600 ID</td>
+                            <td class="px-8 py-6 text-sm text-primary font-medium">Räckvidd 1.85m</td>
+                            <td class="px-8 py-6 text-xs text-slate-500 hidden md:table-cell">Dubbla stationer,
+                                CMT-svetsning</td>
+                            <td class="px-8 py-6 text-right font-bold text-slate-900 dark:text-white">1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-slate-900 text-white overflow-hidden relative" id="process">
+        <div class="absolute inset-0 industrial-pattern opacity-10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-display font-bold mb-4">Vår Process</h2>
+                <p class="text-slate-400">Från första skiss till färdig leverans – vi är din partner.</p>
+            </div>
+            <div class="relative">
+                <div class="hidden lg:block absolute top-10 left-0 w-full h-px bg-slate-700"></div>
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-12">
+                    <div class="relative">
+                        <div
+                            class="w-20 h-20 bg-primary flex items-center justify-center rounded-sm mb-6 relative z-10 shadow-lg">
+                            <span class="material-symbols-outlined text-white text-3xl">lightbulb</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-3">1. Idéutveckling</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Genomgång av ritningar och optimering för
+                            produktionsekonomi.</p>
+                    </div>
+                    <div class="relative">
+                        <div
+                            class="w-20 h-20 bg-primary flex items-center justify-center rounded-sm mb-6 relative z-10 shadow-lg">
+                            <span class="material-symbols-outlined text-white text-3xl">architecture</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-3">2. Prototyping</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Snabb framtagning av provdetaljer för
+                            verifiering av funktion.</p>
+                    </div>
+                    <div class="relative">
+                        <div
+                            class="w-20 h-20 bg-primary flex items-center justify-center rounded-sm mb-6 relative z-10 shadow-lg ring-8 ring-primary/20">
+                            <span class="material-symbols-outlined text-white text-3xl">precision_manufacturing</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-3">3. Produktion</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Effektiv tillverkning i våra moderna
+                            CNC-maskiner dygnet runt.</p>
+                    </div>
+                    <div class="relative">
+                        <div
+                            class="w-20 h-20 bg-primary flex items-center justify-center rounded-sm mb-6 relative z-10 shadow-lg">
+                            <span class="material-symbols-outlined text-white text-3xl">fact_check</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-3">4. Kvalitetssäkring</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Noggrann kontroll och mätprotokoll enligt era
+                            specifikationer.</p>
+                    </div>
+                    <div class="relative">
+                        <div
+                            class="w-20 h-20 bg-primary flex items-center justify-center rounded-sm mb-6 relative z-10 shadow-lg">
+                            <span class="material-symbols-outlined text-white text-3xl">local_shipping</span>
+                        </div>
+                        <h4 class="font-bold text-lg mb-3">5. Leverans</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Säker packning och snabb logistik till din
+                            anläggning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-24 bg-primary text-white" id="kontakt">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-blue-900/50 p-12 lg:p-20 rounded-sm border border-white/10 backdrop-blur-sm">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-4xl lg:text-5xl font-display font-black mb-6">Redo att starta ditt nästa
+                            projekt?</h2>
+                        <p class="text-xl text-blue-100 mb-10">Vi hjälper er med allt från enstaka komponenter till
+                            komplexa helhetslösningar. Kontakta oss för en förutsättningslös diskussion eller offert.
+                        </p>
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <span class="material-symbols-outlined p-3 bg-white/10 rounded-sm">phone</span>
+                                <span class="text-xl font-bold">0320-20 75 70</span>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <span class="material-symbols-outlined p-3 bg-white/10 rounded-sm">mail</span>
+                                <span class="text-xl font-bold">info@berghemsmekaniska.se</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 lg:p-10 rounded-sm shadow-2xl">
+                        <h3 class="text-slate-900 text-2xl font-bold mb-8">Skicka en förfrågan</h3>
+                        <form id="contact-form" class="space-y-5">
+                            <div>
+                                <label
+                                    class="block text-slate-700 text-xs font-bold uppercase tracking-wider mb-2">Namn</label>
+                                <input
+                                    class="w-full border-slate-200 focus:border-primary focus:ring-primary rounded-sm py-3 text-slate-900"
+                                    placeholder="Ditt namn" type="text" />
+                            </div>
+                            <div>
+                                <label
+                                    class="block text-slate-700 text-xs font-bold uppercase tracking-wider mb-2">E-post</label>
+                                <input
+                                    class="w-full border-slate-200 focus:border-primary focus:ring-primary rounded-sm py-3 text-slate-900"
+                                    placeholder="din@epost.se" type="email" />
+                            </div>
+                            <div>
+                                <label
+                                    class="block text-slate-700 text-xs font-bold uppercase tracking-wider mb-2">Meddelande</label>
+                                <textarea
+                                    class="w-full border-slate-200 focus:border-primary focus:ring-primary rounded-sm py-3 text-slate-900 h-32"
+                                    placeholder="Beskriv ditt projekt..."></textarea>
+                            </div>
+                            <button
+                                class="w-full bg-primary text-white font-bold py-4 uppercase tracking-widest text-sm hover:bg-blue-800 transition-colors">Skicka
+                                förfrågan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-slate-950 text-slate-400 py-20 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1">
+                    <img alt="Berghems Mekaniska" class="h-10 mb-8 brightness-0 invert opacity-90"
+                        src="Bilder/logo_berghems.png" />
+                    <p class="text-sm leading-relaxed">Din specialist inom CNC-svarvning och svetsning. Vi levererar
+                        precision och kvalitet sedan 1970-talet.</p>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold mb-8 uppercase text-xs tracking-[0.2em]">Navigering</h5>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-primary transition-colors" href="#">Startsidan</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#om-oss">Om oss</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#tjanster">Våra Tjänster</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#maskinpark">Maskinpark</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold mb-8 uppercase text-xs tracking-[0.2em]">Kontakt</h5>
+                    <p class="text-sm mb-4">Gnejsvägen 11<br />SE-511 91 Skene, Sverige</p>
+                    <p class="text-sm">Växel: 0320-20 75 70</p>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold mb-8 uppercase text-xs tracking-[0.2em]">Logga in</h5>
+                    <a class="inline-flex items-center text-sm hover:text-white transition-colors" href="#">
+                        <span class="material-symbols-outlined mr-2 text-base">login</span>
+                        Kundzon
+                    </a>
+                </div>
+            </div>
+            <div
+                class="pt-10 border-t border-slate-900 flex flex-col md:flex-row justify-between items-center text-[11px] uppercase tracking-widest font-medium">
+                <p>© 2024 Berghems Mekaniska AB. Alla rättigheter förbehållna.</p>
+                <div class="flex space-x-8 mt-6 md:mt-0">
+                    <a class="hover:text-white" href="#">Integritetspolicy</a>
+                    <a class="hover:text-white" href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
